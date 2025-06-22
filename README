@@ -1,0 +1,7 @@
+All files apart from FINAL.py are predecessors and have all been combined into one file, FINAL.py. 
+This project takes a song from Youtube and extracts its transcript. This transcript is then translated and converted to an audio file.
+The user also uploads an mp3 of their desired song that will be used to separate the vocals from the instrumentals using the demucs model. 
+The audio file is synchronized with the vocals of the original song and then recombined after with the original instrumental. 
+
+Running this file is as simple as running FINAL.py and following prompts.
+**Packages such as numpy, demucs, soundfile, librosa, etc will be necessary. 
