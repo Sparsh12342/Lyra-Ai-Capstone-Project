@@ -11,16 +11,6 @@ End-to-end script that:
   6) Aligns synthesized speech into the detected vocal windows
   7) Mixes aligned TTS with the instrumental to produce a final track
 
-Assumptions / Notes:
-- You already have exported TensorFlow SavedModels for:
-    * NMT (translation) — signature takes a batch of strings and returns translated strings
-    * TTS (acoustic+vocoder) — signature takes "text" and optional "target_duration_s" and returns mono audio float32 and sample_rate
-- Alternatively, you are serving them behind TF Serving REST endpoints.
-- This is a scaffold; adapt the input/output keys to match your actual SavedModel signatures.
-- Demucs is used only for source separation (PyTorch). Everything else is TF / classic Python DSP.
-
-Author: you
-"""
 
 import os
 import re
@@ -478,3 +468,4 @@ if __name__ == "__main__":
         instr_vol=args.instr_vol,
         out_dir=args.out,
     )
+
