@@ -1,0 +1,20 @@
+# Core numerical/audio stack
+numpy>=1.24,<2
+scipy>=1.10,<1.12
+soundfile>=0.12.1          # needs system lib: libsndfile
+librosa>=0.10.2.post1
+audioread>=3.0.1
+soxr>=0.3.7                 # high-quality resampling used by librosa
+
+# HTTP + YouTube transcript + downloader
+requests>=2.31
+youtube-transcript-api>=0.6.1
+yt-dlp>=2024.8.6            # requires ffmpeg on PATH for audio extraction
+
+# PyTorch + Demucs (source separation)
+torch==2.1.2                # pinned to match torchaudio on macOS Py3.8
+torchaudio==2.1.2
+demucs>=4.0.1
+
+# Typing helpers (needed by several libs on Py3.8)
+typing-extensions>=4.8
