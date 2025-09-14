@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.env
+.venv/
+venv/
+api/.venv/
+api/venv/
+outputs/
+*.wav
+
+# Node/React
+node_modules/
+frontend/node_modules/
+frontend/build/
